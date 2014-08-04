@@ -34,6 +34,60 @@ footer, header, hgroup, menu, nav, section {display: block}
 			      Global styles
 ***************************************************/
 
+
+th,td
+{
+	margin: 0;
+	text-align: center;
+	border-collapse: collapse;
+	outline: 1px solid #e3e3e3;
+}
+
+td
+{
+	padding: 5px 10px;
+	background: #ffffff;
+	color: black;
+}
+
+td.break
+{
+	padding: 5px 10px;
+	color: black;
+	background: #eeeeee;
+}
+
+th
+{
+	background: #003e7e;
+	color: white;
+	padding: 5px 10px;
+}
+
+td:hover
+{
+	cursor: pointer;
+	background: #058ed0;
+	color: white;
+}
+
+td.break:hover
+{
+	cursor: pointer;
+	background: #003e7e;
+	color: white;
+}
+
+
+table
+{
+	border:1px solid black;
+	border-collapse:collapse;
+	border-spacing:5px;
+}
+
+
+
 html {
 	width: 100%;
 	height: 100%;
@@ -67,6 +121,14 @@ a, p a {
 a: hover {
    color: white;
 }
+
+a.nostyle { 
+	color: inherit; 
+	text-decoration: none;
+	display: block;		 
+	width: 100%;
+	height: 100%;
+} 
 
 h1, h2, h3, h4, h5, h6 {
    font-family: Arial, Helvetica, sans-serif;
@@ -107,6 +169,11 @@ h3 {
 	text-align: left;
 	margin-bottom: 6px;
 	padding-bottom: 5px;
+}
+
+h3.center
+{
+	text-align: center;
 }
 
 h4 {
@@ -174,6 +241,26 @@ h4 {
 	-moz-column-count: 3; /* Firefox */
 	-webkit-column-count: 3; /* Safari and Chrome */
 	column-count: 3;	
+	-moz-column-gap: 40px; /* Firefox */
+	-webkit-column-gap: 40px; /* Safari and Chrome */
+	column-gap: 40px;	
+	-moz-column-rule: 1px solid #A3A3A3; /* Firefox */
+	-webkit-column-rule: 1px solid #A3A3A3; /* Safari and Chrome */
+	column-rule: 1px solid #A3A3A3;
+}
+
+.group5 {
+	float: left;
+	width: 950px;
+	position: relative;
+	padding: 15px;
+	margin-top: -14px;
+	margin-bottom: 25px;
+	background: transparent;
+	border-top: 1px solid #A3A3A3;
+	-moz-column-count: 1; /* Firefox */
+	-webkit-column-count: 1; /* Safari and Chrome */
+	column-count: 1;	
 	-moz-column-gap: 40px; /* Firefox */
 	-webkit-column-gap: 40px; /* Safari and Chrome */
 	column-gap: 40px;	
